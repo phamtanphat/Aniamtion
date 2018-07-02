@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
     public void AnimationAlpha(View v){
         SetAnimation(R.anim.animation_alpha, v);
     }
+    public void AnimationScale(View v){
+        //X se tang khi di tu phai sang trai
+        //Y se tang khi di tu duoi len tren
+        SetAnimation(R.anim.animation_scale, v);
+    }
     public void SetAnimation(int animation , View v){
         animationView = AnimationUtils.loadAnimation(MainActivity.this,animation);
         v.setOnClickListener(new View.OnClickListener() {
