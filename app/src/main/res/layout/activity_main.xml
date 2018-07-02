@@ -15,9 +15,23 @@
         android:layout_height="100dp" />
     <ImageView
         android:onClick="AnimationScale"
-        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/imageviewAlpha"
         android:id="@+id/imageviewScale"
         android:src="@drawable/imagescale"
-        android:layout_width="250dp"
-        android:layout_height="250dp" />
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <ImageView
+        android:onClick="AnimationRotate"
+        android:layout_toRightOf="@id/imageviewScale"
+        android:id="@+id/imageviewRotate"
+        android:src="@drawable/iconbell"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageView
+        android:onClick="AnimationTranslate"
+        android:layout_below="@id/imageviewScale"
+        android:id="@+id/imageviewTranslate"
+        android:src="@drawable/iconcar"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
 </RelativeLayout>
